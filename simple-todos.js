@@ -9,11 +9,6 @@ if (Meteor.isClient) {
 
   Template.body.events({
     "submit .new-task": function(event){
-
-
-
-
-
       var text = event.target.text.value;
       console.log(event);
 
