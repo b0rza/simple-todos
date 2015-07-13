@@ -31,7 +31,6 @@ if (Meteor.isClient) {
       });
 
       event.target.text.value = "";
-
       return false;
     },
 
@@ -51,6 +50,6 @@ if (Meteor.isClient) {
   });
 
   Accounts.ui.config({
-    passwordSignupFields: u
+    passwordSignupFields: "USERNAME_ONLY"
   });
 }

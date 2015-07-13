@@ -8,7 +8,7 @@
       <h1>Todo List ({{ incompleteCount }}) </h1>
 
       <label class="hide-completed">
-        <input type="checkbox" checked="hide-completed" />
+        <input type="checkbox" checked="{{ hideCompleted }}" />
         Hide completed tasks
       </label>
 
@@ -18,7 +18,7 @@
         <form class="new-task">
           <input type="text" name="text" placeholder="Type to add new tasks" />
         </form>
-      {{ #if currentUser }}
+      {{ /if }}
     </header>
 
 
@@ -36,6 +36,6 @@
 
       <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
 
-      <span class="text">{{text}}</span>
+      <span class="text"><strong>{{ username }}</strong> - {{text}}</span>
     </li>
 </template>
